@@ -1,0 +1,14 @@
+RIEGO_PAPA = 10
+RIEGO_YUCA = 15
+RIEGO_ZANAHORIA = 8
+
+NOMBRES_CULTIVOS = ["papa", "yuca", "zanahoria"]
+
+CANTIDAD_RIego = [RIEGO_PAPA, RIEGO_YUCA, RIEGO_ZANAHORIA]
+
+for i in range(len(NOMBRES_CULTIVOS)):
+    cantidad_plantas = int(input("Ingrese la cantidad de plantas de " + NOMBRES_CULTIVOS[i] + ": "))
+    CANTIDAD_RIego[i] *= cantidad_plantas
+
+for i in range(len(NOMBRES_CULTIVOS)):
+    print("La cantidad de riego necesaria para las plantas de " + NOMBRES_CULTIVOS[i] + " es: " + str(CANTIDAD_RIego[i]) + " litros por semana.")
